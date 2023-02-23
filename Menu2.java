@@ -25,8 +25,8 @@ public class Menu2 {
             switch (opcion) {
                 case 1:
                     System.out.println("Ingrese un número entero positivo: ");
-                    int n1 = scanner.nextInt();
-                    int factorial = calcularFactorial(n1);
+                    long n1 = scanner.nextInt();
+                    Long factorial = calcularFactorial(n1);
                     System.out.println("El factorial de " + n1 + " es: " + factorial);
                     break;
                 case 2:
@@ -94,7 +94,7 @@ public class Menu2 {
     }
     
     // Función para calcular el factorial de un número entero positivo
-    public static int calcularFactorial(int n) {
+    public static long calcularFactorial(long n) {
         if (n == 0) {
             return 1;
         } else {
